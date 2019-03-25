@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.1.14" icons="true" automaticImage="PNG" always-add-relationships="false" 
+  generalizations="true" realizations="true" associations="true" dependencies="true" nesting-relationships="true" 
+  router="FAN">  
+  <class id="1" language="java" name="ConcreteStrategyTime" project="Homework2 - preFinal" 
+    file="/Homework2 - preFinal/src/ConcreteStrategyTime.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="99" width="184" x="276" y="168"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="SimulationManager" project="Homework2 - preFinal" 
+    file="/Homework2 - preFinal/src/SimulationManager.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="585" width="294" x="737" y="52"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="Scheduler" project="Homework2 - preFinal" 
+    file="/Homework2 - preFinal/src/Scheduler.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="249" width="206" x="43" y="66"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <enumeration id="4" language="java" name="SelectionPolicy" project="Homework2 - preFinal" 
+    file="/Homework2 - preFinal/src/SelectionPolicy.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="122" width="198" x="268" y="380"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </enumeration>  
+  <class id="5" language="java" name="Server" project="Homework2 - preFinal" 
+    file="/Homework2 - preFinal/src/Server.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="340" width="183" x="1118" y="51"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="SimulationFrame" project="Homework2 - preFinal" 
+    file="/Homework2 - preFinal/src/SimulationFrame.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="466" width="155" x="523" y="59"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="7" language="java" name="Strategy" project="Homework2 - preFinal" 
+    file="/Homework2 - preFinal/src/Strategy.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="83" width="184" x="275" y="63"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="8" language="java" name="Task" project="Homework2 - preFinal" file="/Homework2 - preFinal/src/Task.java" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="53" width="179" x="1115" y="413"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="9" language="java" name="ConcreteStrategyQueue" project="Homework2 - preFinal" 
+    file="/Homework2 - preFinal/src/ConcreteStrategyQueue.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="84" width="184" x="275" y="279"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

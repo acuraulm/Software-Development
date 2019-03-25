@@ -1,0 +1,1 @@
+This is a Blackjack game implemented as a desktop application using JSwing.

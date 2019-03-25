@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="persistence.entities.Flight" table="flights">
+		<meta attribute="class-description">
+			This class contains the flight detail.
+		</meta>
+		<id name="id" type="int" column="id">
+			<generator class="native" />
+		</id>
+		<property name="number" column="nunber" type="int" />
+		<property name="type" column="type" type="string" />
+		<many-to-one name="departureCity" class="entities.City" column="departureCityId"/>
+		<property name="departureDate" column="departureTime" type="timestamp" />
+		<many-to-one name="arrivalCity" class="entities.City" column="arrivalCityId"/>
+		<property name="departureDate" column="arrivalTimr" type="timestamp" />
+	</class>
+</hibernate-mapping>
