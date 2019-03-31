@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="persistence.entities.Route" table="route">
+		<meta attribute="class-description">
+			This class contains the route detail.
+		</meta>
+		<id name="id" type="int" column="id">
+			<generator class="native" />
+		</id>
+		
+		<many-to-one name="status"  class="entities.Status" fetch="select">
+            <column name="status_id" />
+        </many-to-one>
+		<property name="city" column="city" type="string" />
+		<property name="time" column="time" type="timestamp"/>
+	</class>
+</hibernate-mapping>
