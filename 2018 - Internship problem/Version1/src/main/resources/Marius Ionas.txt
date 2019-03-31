@@ -1,0 +1,8 @@
+	Hotel Confort
+Room type:SINGLE, Price:200.0, Rooms Available:6
+Room type:DOUBLE, Price:200.0, Rooms Available:7
+Room type:SUITE, Price:350.0, Rooms Available:1
+	Grand Hotel Italia
+Room type:SINGLE, Price:360.0, Rooms Available:2
+Room type:DOUBLE, Price:420.0, Rooms Available:1
+Room type:SUITE, Price:700.0, Rooms Available:1

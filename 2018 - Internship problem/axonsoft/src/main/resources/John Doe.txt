@@ -1,0 +1,22 @@
+John Doe
+
+Hampton by Hilton
+	 2 available single rooms at 350.0 RON per night
+	 1 available double room at 400.0 RON per night
+	 1 available suite room at 650.0 RON per night
+Beyfin
+	 4 available single rooms at 300.0 RON per night
+	 8 available double rooms at 370.0 RON per night
+	 No SUITE rooms available at the moment.
+Hotel Opera Plaza
+	 4 available single rooms at 450.0 RON per night
+	 8 available double rooms at 520.0 RON per night
+	 2 available suite rooms at 800.0 RON per night
+Hotel Confort
+	 6 available single rooms at 200.0 RON per night
+	 7 available double rooms at 200.0 RON per night
+	 1 available suite room at 350.0 RON per night
+Hotel Paradis
+	 7 available single rooms at 200.0 RON per night
+	 8 available double rooms at 250.0 RON per night
+	 1 available suite room at 400.0 RON per night

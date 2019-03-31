@@ -1,0 +1,10 @@
+Marius Ionas
+
+Grand Hotel Italia
+	 2 available single rooms at 360.0 RON per night
+	 1 available double room at 420.0 RON per night
+	 1 available suite room at 700.0 RON per night
+Hotel Confort
+	 6 available single rooms at 200.0 RON per night
+	 7 available double rooms at 200.0 RON per night
+	 1 available suite room at 350.0 RON per night

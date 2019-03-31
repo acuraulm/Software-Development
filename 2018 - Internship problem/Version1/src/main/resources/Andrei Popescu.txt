@@ -1,0 +1,15 @@
+	Hotel Paradis
+Room type:SINGLE, Price:200.0, Rooms Available:7
+Room type:DOUBLE, Price:250.0, Rooms Available:8
+Room type:SUITE, Price:400.0, Rooms Available:1
+	Beyfin
+Room type:SINGLE, Price:300.0, Rooms Available:4
+Room type:DOUBLE, Price:370.0, Rooms Available:8
+	Hampton by Hilton
+Room type:SINGLE, Price:350.0, Rooms Available:2
+Room type:DOUBLE, Price:400.0, Rooms Available:1
+Room type:SUITE, Price:650.0, Rooms Available:1
+	Hotel Opera Plaza
+Room type:SINGLE, Price:450.0, Rooms Available:4
+Room type:DOUBLE, Price:520.0, Rooms Available:8
+Room type:SUITE, Price:800.0, Rooms Available:2
