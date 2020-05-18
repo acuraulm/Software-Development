@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>Author page</title>
+    <link th:if="${mode == 'development'}" rel="stylesheet" href="../static/bootstrap.css" th:href="@{/bootstrap.css}" />
+    <link th:if="${mode == 'production'}" rel="stylesheet" href="../static/bootstrap.min.css" th:href="@{/bootstrap.min.css}" />
+    <script type="text/javascript" src="/static/angular.min.js" th:src="@{/angular.min.js}"></script>
+    <script type="text/javascript" src="/static/app/app.module.js" th:src="@{/app/app.module.js}"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-cookies.js"></script>
+    <script src="https://rawgithub.com/gsklee/ngStorage/master/ngStorage.js"></script>
+  
+    <script type="text/javascript" src="/static/app/author.controller.js" th:src="@{/app/author.controller.js}"></script>
+</head>
+<body ng-app="app" ng-controller="AuthorController as vm">
+<header>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Online library</a>
+              
+            </div>
+             <a class="btn btn-danger navbar-right" style="margin-top: 8px; margin-right:7px" href="/">Log out</a>
+             <p class="navbar-text navbar-right" style="margin-right: 10px;">Logged in as {{vm.loggedAuthor.name}}</p>
+        </div>
+    </nav>
+</header>
+
+
+
+<div>
+    <div class="row">
+        <div class="col-lg-offset-2 col-lg-8">
+            <!-- Get all author or only affordable ones -->
+          
+            <!-- Display author in a table -->
+            <table>
+                <thead>
+                <tr>
+                    <th style="width: 325px"><h3>&nbspEdit Profile</h3></th>
+                    <th style="width: 55px"></th>
+                    <th style="width: 225px"></th>
+                    <th style="width: 55px"></th>
+                    <th style="width: 225px"></th>
+                     <th style="width: 85px"></th>
+                </tr>
+                </thead>
+                <tbody>
+               		<tr>
+               			<td>  &nbsp&nbsp<label>Name</label> 	<input type="text" class="form-control"> </td><td></td>
+               			<td>  &nbsp&nbsp<label>Username</label> <input type="text" class="form-control" > </td><td></td>
+               			<td>  &nbsp&nbsp<label>Password</label> <input type="password" class="form-control"> </td><td></td>
+               			<td><button type="button" class="btn btn-success" ng-click="" style="margin-top:25px">Save changes</button></td>
+               			
+               		</tr>
+               </tbody>
+            </table>
+                
+              
+            <!-- Display author in a table -->
+            <table class="table">
+                <thead>
+
+                <tr>
+                    <th> <h3> Written books</h3></th>
+                    <th style="width: 55px"></th>
+                </tr>
+                </thead>
+                <tbody>
+                
+               </tbody>
+            </table>
+            
+            <!-- Display author in a table -->
+            <table class="table">
+                <thead>
+
+                <tr>
+                    <th> <h4> Title</hh4></th>
+                    <th> <h4> Genre</h4>
+                    <th style="width: 55px"></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr ng-repeat="iterator in vm.writtenBooks">
+                    <td>{{iterator.title}}</td>
+                    <td>{{iterator.genre}}</td>
+                  	<td><button type="button" class="btn btn-danger" ng-click="vm.unenrollFromCourse(iterator.course.id)">View reviews</button></td>
+                </tr>
+                
+               </tbody>
+            </table>
+			 <button ng-repeat="iterator in vm.courseList" type="button" class="btn btn-danger" ng-click="vm.enrollInCourse(iterator.id)">{{iterator.name}}</button>
+              
+			     
+			      
+        </div>
+    </div>
+</div>
+
+<footer class="footer" style="position: absolute; bottom:0;background-color: #f5f5f5; width: 100%">
+    <div class="container">
+        <p class="text-muted"></p> 	
+    </div>
+</footer>
+</body>
+</html>

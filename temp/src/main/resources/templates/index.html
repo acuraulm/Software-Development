@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title>Login page</title>
+    <link th:if="${mode == 'development'}" rel="stylesheet" href="../static/bootstrap.css" th:href="@{/bootstrap.css}" />
+    <link th:if="${mode == 'production'}" rel="stylesheet" href="../static/bootstrap.min.css" th:href="@{/bootstrap.min.css}" />
+    <script type="text/javascript" src="/static/angular.min.js" th:src="@{/angular.min.js}"></script>
+    <script type="text/javascript" src="/static/app/app.module.js" th:src="@{/app/app.module.js}"></script>
+    <script src="https://rawgithub.com/gsklee/ngStorage/master/ngStorage.js"></script>
+    
+    <script type="text/javascript" src="/static/app/login.controller.js" th:src="@{/app/login.controller.js}"></script>
+</head>
+<body ng-app="app" ng-controller="LoginController as vm">
+<header>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Online library</a>
+            </div>
+            <p class="navbar-text navbar-right"  style="margin-right: 10px;">Please log in to continue</p>
+        </div>
+    </nav>
+</header>
+
+<center>
+<div>
+    <div class="row">
+        <div class="col-lg-offset-2 col-lg-8">
+  
+	        <form>
+			  <div class="form-group" >
+			    <label>Username</label>
+			    <input type="text" class="form-control" placeholder="Username" ng-model="usernameTxt" style="width:175px">
+			  </div>
+			  <div class="form-group">
+			    <label>Password</label>
+			    <input type="password" class="form-control" placeholder="Password" ng-model="passwordTxt" style="width:175px" >
+			  </div>
+			 
+			  <button type="submit" class="btn btn-primary" ng-click="vm.login(usernameTxt, passwordTxt)">Log in</button>
+			</form>
+
+        </div>
+    </div>
+</div>
+</center>
+
+<footer class="footer" style="position: absolute; bottom:0;background-color: #f5f5f5; width: 100%">
+    <div class="container">
+        <p class="text-muted">Page was rendered today.</p>
+    </div>
+</footer>
+</body>
+</html>
